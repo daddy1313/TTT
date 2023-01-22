@@ -1,0 +1,65 @@
+body{
+    font-family: casual;
+    text-align: center;
+    background: linear-gradient(to right , #6283FA, #FFA643);
+}
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+#restartBtn{
+    color: black;
+    line-height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+#restartBtn{
+    position: relative;
+    background-color: #f6ff73;
+    border: none;
+    margin-right: .5cm;
+    margin-left: .5cm;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.9s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+ #restartBtn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1.4s
+  }
+  
+#restartBtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
